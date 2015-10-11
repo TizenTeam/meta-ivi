@@ -1,0 +1,25 @@
+From ffd868e3c17217f65d83238b3abbaa48234230c7 Mon Sep 17 00:00:00 2001
+From: Nobuhiko Tanibata <ntanibata@jp.adit-jv.com>
+Date: Fri, 9 Oct 2015 17:24:32 +0900
+Subject: [PATCH] fix: apply zoom transition
+
+---
+ weston-ivi-shell/src/ivi-controller-impl.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/weston-ivi-shell/src/ivi-controller-impl.c b/weston-ivi-shell/src/ivi-controller-impl.c
+index f4e29ce..482ef98 100644
+--- a/weston-ivi-shell/src/ivi-controller-impl.c
++++ b/weston-ivi-shell/src/ivi-controller-impl.c
+@@ -482,7 +482,7 @@ controller_surface_set_destination_rectangle(struct wl_client *client,
+ 
+     // TODO: create set transition type protocol
+     ivi_extension_surface_set_transition(ivisurf->shell, ivisurf->layout_surface,
+-                                     IVI_LAYOUT_TRANSITION_NONE,
++                                     IVI_LAYOUT_TRANSITION_VIEW_DEFAULT,
+                                      300); // ms
+ 
+     ivi_extension_surface_set_destination_rectangle(ivisurf->shell, ivisurf->layout_surface,
+-- 
+1.8.3.1
+

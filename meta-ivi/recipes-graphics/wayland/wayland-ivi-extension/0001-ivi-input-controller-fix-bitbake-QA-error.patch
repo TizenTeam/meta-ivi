@@ -1,0 +1,28 @@
+From de92855581b8f09d5894ec6eb8e5ea1eaeb8abb9 Mon Sep 17 00:00:00 2001
+From: Nobuhiko Tanibata <ntanibata@jp.adit-jv.com>
+Date: Sat, 10 Oct 2015 12:42:08 +0900
+Subject: [PATCH] ivi-input-controller: fix bitbake QA error
+
+> ERROR: QA Issue: wayland-ivi-extension: The compile log indicates that host include and/or library paths were used.
+>          Please check the log '..../wayland-ivi-extension/1.5.0-r0/temp/log.do_compile' for more information. [compile-host-path]
+> ERROR: QA run found fatal errors. Please consider fixing them.
+> ERROR: Function failed: do_package_qa
+---
+ ivi-input-controller/CMakeLists.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/ivi-input-controller/CMakeLists.txt b/ivi-input-controller/CMakeLists.txt
+index c5a32c2..1d02b6a 100644
+--- a/ivi-input-controller/CMakeLists.txt
++++ b/ivi-input-controller/CMakeLists.txt
+@@ -44,7 +44,6 @@ include_directories(
+ link_directories(
+     ${WAYLAND_SERVER_LIBRARY_DIRS}
+     ${WESTON_LIBRARY_DIRS}
+-    ${WESTON_LIBDIR}/weston
+     ${PIXMAN_LIBRARY_DIRS}
+ )
+ 
+-- 
+1.8.3.1
+
