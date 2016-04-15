@@ -11,7 +11,7 @@ SRCREV = "5e2f490b40b8b60a0efbd2b244be44d93bc081f6"
 PR = "r1"
 
 SRC_URI = " \
-    git://git.projects.genivi.org/layer_management.git;protocol=git \
+    git://git.projects.genivi.org/layer_management.git;protocol=http \
     file://layermanager.service \
     "
 
