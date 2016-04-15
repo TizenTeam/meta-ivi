@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=176cedb32f48dd58f07e0c1c717b3ea4"
 
 DEPENDS = "weston"
 
-SRC_URI = "git://git.projects.genivi.org/wayland-ivi-extension.git \
+SRC_URI = "git://git.projects.genivi.org/wayland-ivi-extension.git;protocol=http \
            file://use_sysroot_dir.patch \
            file://fix_compositor_include.patch \
           "

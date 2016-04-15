@@ -11,7 +11,7 @@ DEPENDS = "common-api-c++-dbus dlt-daemon sqlite3 dbus node-state-manager"
 BRANCH = "master"
 
 SRC_URI = " \
-    git://git.projects.genivi.org/AudioManager.git;branch=${BRANCH};tag=${PV} \
+    git://git.projects.genivi.org/AudioManager.git;branch=${BRANCH};tag=${PV};protocol=http \
     file://AudioManager.service \
     file://setup_amgr.sh \
     "

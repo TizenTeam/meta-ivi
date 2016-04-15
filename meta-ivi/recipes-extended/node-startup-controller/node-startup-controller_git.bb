@@ -18,7 +18,7 @@ PR = "r2"
 
 DEFAULT_PREFERENCE = "-1"
 
-SRC_URI = "git://git.projects.genivi.org/lifecycle/node-startup-controller.git;protocol=git"
+SRC_URI = "git://git.projects.genivi.org/lifecycle/node-startup-controller.git;protocol=http"
 
 DEPENDS = "glib-2.0 dlt-daemon systemd"
 

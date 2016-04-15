@@ -14,7 +14,7 @@ SRCREV = "86c2dc9ef367b52fd5d05b53cbad5e21b9ab042f"
 
 DEFAULT_PREFERENCE = "-1"
 
-SRC_URI = "git://git.projects.genivi.org/layer_management.git;protocol=git \
+SRC_URI = "git://git.projects.genivi.org/layer_management.git;protocol=http \
 	   file://point-to-internal-CMakeVersions.patch \
 	   file://include-unistd-for-usleep-in-OpenGLES2App.patch \
 	   file://include-unistd-for-alarm-in-example.patch \
